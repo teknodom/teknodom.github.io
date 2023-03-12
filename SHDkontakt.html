@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <title>Kontakt oss</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="/resources/CSS/SHDkontakt.css" rel="stylesheet">
+</head>
+<body>
+
+  
+  <div class="navbar">
+    <img class="logo" src="/resources/images/logo-svarthvit.png" alt="logo">
+    <nav class="nav-bar">
+      <ul class="navbarliste">
+        <li><a href="SHD.html">Hjem</a></li>
+        <li><a href="SHD.eiendommer.html">Eiendommer</a></li>
+        <!-- <li><a href="">FAQ</a></li> -->
+        <li><a href="SHDomoss.html">Om oss</a></li>
+        <li><a href="SHDpartnere.html">Partnere</a></li>
+      </ul>
+    </nav>
+    <a href="SHDkontakt.html"><button class="knapp2">Kontakt oss</button></a>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+  <script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function() {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+  </script>
+  
+  <div class="kontaktboks">
+    <div> <!--Nødvendig for at overskriften skal bli rikitg?!-->
+      <h1>Kontakt oss her</h1>
+      <form action="somewhere" method="GET">
+        <label for="navn">Navn</label><br>
+        <input id="navn" name="navn" class="felt" type="text" required placeholder="Skriv inn navnet ditt">
+        <br>
+        <label for="telefonnummer">Telefonnummer</label><br>
+        <input id="telefonnummer" name="telefonnummer" class="felt" type="text" required placeholder="Skriv inn telefonnummeret ditt">
+        <br>
+        <label for="epost">Epostadresse</label><br>
+        <input id="epost" name="epost" class="felt" type="text" required placeholder="Skriv inn epostadressen din">
+        <br>
+        <label for="melding">Melding</label><br>
+        <textarea id="melding" name="melding" class="felt" required rows="8" cols="40" placeholder="Skriv inn meldingen din"></textarea>
+        <br>
+        <input type="submit" class="btn" value="Send inn">
+      </form>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-content">
+       <h4>Smarte Hjem Drammen</h4>
+       <p>+47 403 05 359</p>
+       <p>kontaktstian@hotmail.com</p>
+       <ul class="sosiale">
+        <li><a href="https://www.facebook.com/profile.php?id=100004467826902" class="facebook">Facebook</a></li>
+        <li><a href="#" class="Instagram">Instagram</a></li>
+        <li><a href="https://twitter.com/StianVaringstad" class="Twitter">Twitter</a></li>
+       </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy;2023 Smarte Hjem Drammen. Designed by <span>Stian Væringstad</span></p>
+    </div>
+  </footer>
+</body>
+</html>

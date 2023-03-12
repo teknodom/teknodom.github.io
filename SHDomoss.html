@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <title>Smarte Hjem Drammen</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="resources/CSS/SHDomoss.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <img class="logo" src="/resources/images/logo-svarthvit.png" alt="logo">
+        <nav class="nav-bar">
+            <ul class="navbarliste">
+                <li><a href="SHD.html">Hjem</a></li>
+                <li><a href="SHD.eiendommer.html">Eiendommer</a></li>
+                <!-- <li><a href="">FAQ</a></li> -->
+                <li><a href="#" class="activ">Om oss</a></li>
+                <li><a href="SHDpartnere.html">Partnere</a></li>
+            </ul>
+         </nav>
+        <a href="SHDkontakt.html"><button class="knapp2">Kontakt oss</button></a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+         </div>
+    </div>
+    
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+
+    <div class="svartbox">
+        <div class="overskrift">
+            <img src="resources/images/utsiktP33.jpg" alt="utsikt" class="bakgrunnsbilde">
+            <h1>Smarte Hjem Drammen</h1>
+            <p>Om oss</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <h2>Vår visjon</h2>
+            <p>Smarte Hjem Drammen prøver å tilby de beste og mest spennende leilighetene ute på utleiemarkedet. Vårt satsningsområde er integrerte smart systemer og høy service til våre leietakere.</p>
+        </div>
+        <div class="box">
+            <h2>Lidenskap for eiendom og teknologi</h2>
+            <p>Stian Væringstad har en lidenskap for eiendom og teknologi. Smarte Hjem Drammen er et selskap som prøver å integrere den ene med den andre.</p>
+        </div>
+        <div class="box">
+            <h2>Utvikling og samarbeid</h2>
+            <p>Smarte Hjem Drammen vokser som selskap for hvert år som går og satser for fult på konseptet sitt. Deres samarbeidspartnere har også fått stor tro på konseptet etter å ha sett det i aksjon.</p>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="box2">
+            <img src="resources/images/fintbildemedsøster.jpg" alt="Eier" class="eierbilde">
+            <h2>Stian Væringstad</h2>
+            <p>Eier</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <h4>Smarte Hjem Drammen</h4>
+            <p>+47 403 05 359</p>
+            <p>kontaktstian@hotmail.com</p>
+            <ul class="sosiale">
+                <li><a href="https://www.facebook.com/profile.php?id=100004467826902" class="facebook">Facebook</a></li>
+                <li><a href="#" class="Instagram">Instagram</a></li>
+                <li><a href="https://twitter.com/StianVaringstad" class="Twitter">Twitter</a></li>
+            </ul>
+        </div>
+      <div class="footer-bottom">
+        <p>Copyright &copy;2023 Smarte Hjem Drammen. Designed by <span>Stian Væringstad</span></p>
+      </div>
+    </footer>
+</body>
+</html>

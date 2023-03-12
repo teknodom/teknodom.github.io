@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <title>Smarte Hjem Drammen</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="resources/CSS/SHD.css" rel="stylesheet">
+  <link 
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" 
+  />
+</head>
+<body>
+  <div class="navbar">
+    <img class="logo" src="/resources/images/logo-svarthvit.png" alt="logo">
+    <nav class="nav-bar">
+        <ul class="navbarliste">
+          <li><a href="" class="activ">Hjem</a></li>
+          <li><a href="SHD.eiendommer.html">Eiendommer</a></li>
+          <!-- <li><a href="">FAQ</a></li> -->
+          <li><a href="SHDomoss.html">Om oss</a></li>
+          <li><a href="SHDpartnere.html">Partnere</a></li>
+        </ul>
+      </nav>
+    <a href="SHDkontakt.html"><button class="knapp2">Kontakt oss</button></a> 
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+
+  <div class="intro">
+    <img src="/resources/images/fintnattbildeavdrammen.jpg" alt="nydeligbilde">
+    <h3><span id="smart">Smart</span> leiligheter til leie i</h3>
+    <h1>Drammen</h1>
+  </div>
+  <script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function() {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+  </script>
+
+  <div id="beskrivelse">
+    <p>Smarte Hjem Drammen tilbyr de beste leilighetene på utleiemarkedet med integrete smart løsninger og høy service til leietakerne!</p>
+    <a href="SHDomoss.html"><button class="knapp"> Les mer om oss</button></a>
+  </div>
+
+  <main>
+    <div class="container">
+      <div class="info">
+        <img src="/resources/images/husmednøkkel.webp" id="smarthusikon" class="infobilde" alt="hus-med-nøkkel">
+        <h2>Nyoppussede leiligheter</h2>
+          <p>Alle eiendommene er blitt renovert eller lettere
+            pusset opp de siste årene. Leilighetene blir kontinuerlig velikeholdt for å opprettholde en høy standard.
+          </p>
+      </div>
+      <div class="info">
+        <img src="/resources/images/Kontrakt-symbol-bilde.png" id="kontrakt" class="infobilde" alt="kontrakt">
+        <h2>Digital leiekontrakt</h2>
+          <p>Standard kontrakt fra Husleie.no sikrer alle rettigheter
+            til hver part. Signering kan enkelt gjøres ved å bruke BankID digitalt. Har også muligheten for 3D visninger for personer som ikke har muligheten til å møte opp på vanlige visninger.
+          </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="info">
+        <img src="/resources/images/mapspic.jpg" id="map" class="infobilde" alt="map">
+        <h2>Sentralt</h2>
+          <p>Leilighetene ligger i sentrale deler av Drammen, Solbergelva og Krokstadelva. Matbutikker ligger altid et steinkast unna.</p>
+      </div>
+      <div class="info">
+        <img src="/resources/images/checkbox.png" id="checkbox" class="infobilde" alt="checkbox">
+        <h2>Nesten alt inkludert</h2>
+          <p>Alle leilighetene har innkludert vann og avløp, renovasjon, parkering, felleskostnader og smart løsninger. Alle soverom har store skap inkludert også.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="info">
+        <h2>Smart belysning</h2>
+          <p>Alle leilighetene har smart belysning systemer integrert som følger med leilighetene. For lys bruker vi plejd systmet. Dette er koblet inn i alle lamper og belysning som gjør at du kan styre lyset i hjemmet fra hvor enn du er! Du kan også lage tidsplaner som gjør at alt av lys skrur seg av når du drar på jobb eller at alt lys skrur seg på om morgen etc. Du kan også koble systemet opp mot Google Home eller Alexa for å aktivere stemmestyrt belysning!</p>
+      </div>
+      <div class="info">
+        <img src="/resources/images/plejdtelefon.jpg" id="plejd" class="smartbilde" alt="plejd">
+        </div>
+    </div>
+    <div class="container">
+      <div class="info">
+        <h2>Smart oppvarming</h2>
+          <p>Alle leilighetene har smart oppvarming system som følger med leilighetene. For oppvarming bruker vi Mill systemet. Dette gjør at du kan styre alle varmeovnene i leiligheten din ved bruk av telefonen fra hvor enn du er! Dette fører til lavere energiforbruk som resulterer i lavere strømregninger. Du kan også koblet dette systemet opp mot Google Home eller Alexa for å aktivere stemmestyring.</p>
+      </div>
+      <div class="info">
+        <img src="/resources/images/millglasssmartovn.jpg" id="mill" class="smartbilde" alt="mill-glass-ovn">
+        </div>
+    </div>
+    <div class="container">
+      <div class="info">
+        <h2>Smart dørlås</h2>
+          <p>Alle leilighetene har smart dørlås som følger med leilighetene. For dørlåsene bruker vi Yale Doorman sitt system. Disse smarte dørlåsene kan du låse opp ved bruk av kode, nøkkelbrikke eller telefonen. Du trenger ikke å være redd for å miste nøkellen igjen! Du kan også låse opp døren eller sjekke om døren er låst fra telefonen uansett hvor du er.</p>
+      </div>
+      <div class="info">
+        <img src="/resources/images/yale_doorman_hvit.Jpg" id="yale" class="smartbilde" alt="yale-doorman">
+        </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+       <h4>Smarte Hjem Drammen</h4>
+       <p>+47 403 05 359</p>
+       <p>kontaktstian@hotmail.com</p>
+       <ul class="sosiale">
+        <li><a href="https://www.facebook.com/profile.php?id=100004467826902" class="facebook">Facebook</a></li>
+        <li><a href="#" class="Instagram">Instagram</a></li>
+        <li><a href="https://twitter.com/StianVaringstad" class="Twitter">Twitter</a></li>
+       </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy;2023 Smarte Hjem Drammen. Designed by <span>Stian Væringstad</span></p>
+    </div>
+  </footer>
+</body>
+
+</html>
+
