@@ -1,0 +1,321 @@
+/* Gjelder for hele
+============================*/
+  * {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+  }
+  body {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-family: Georgia;
+    width: 100%;
+    height: 100%;
+  }
+/* Gjelder for hele
+=============================*/
+
+
+/*navigasjonsbaren
+=============================*/
+  .navbar{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color: #FFF;
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 1);
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+  }
+  .logo{
+    width: 9rem;
+    height: 3rem;
+  }
+  .activ{
+    color: white !important;
+    background-color: black;
+  }
+  .navbarliste li { 
+    display: inline-block;
+    padding: 0 1rem;
+  }
+  .navbarliste li a {
+    transition: all 0.3s ease 0s;
+  }
+  .navbarliste li a:hover{
+    color:#FFF;
+    background-color: black;
+  }
+  .nav-bar li a{
+    font-size: 1rem;
+    padding: 1.25rem;
+    display: block;
+    color: black;
+  }
+  .knapp2{
+    font-weight: bold;
+    color: #FFF;
+    background-color: black;
+    cursor: pointer;
+    height: 2.75rem;
+    width: 10rem;
+    font-size: 1rem;
+  }
+  .knapp2:hover{
+    background-color: #FFF;
+    color: black;
+    transition: font-size .15s;
+    font-size: 1.38rem;
+  }
+  .hamburger{
+    display:none;
+  }
+  @media only screen and (max-width:1160px){
+    .navbar{
+      padding: 0 0.5%;
+    }
+    .navbarliste li{
+      padding: 0 0.1rem;;
+    }
+  }
+  @media only screen and (max-width: 960px){
+    .hamburger{
+      display:block;
+      cursor:pointer;
+    }
+    .hamburger .line{
+      width: 30px;
+      height: 3px;
+      background: black;
+      margin: 6px 0;
+    }
+    .nav-bar{
+      height: 0;
+      position: absolute;
+      top: 48.4px;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      background-color: rgb(255, 255, 255);
+      transition: 0.2s;
+      overflow: hidden;
+    }
+    .nav-bar.active{
+      height: 340px;
+    }
+    .nav-bar ul{
+      display: block;
+      width: fit-content;
+      margin: 50px auto 0 auto;
+      text-align: center;
+      transition: 0.5s;
+      opacity: 0;
+    }
+    .navbarliste li{
+      display: block;
+    }
+    .nav-bar ul li{
+      color: black;
+    }
+    .nav-bar.active ul{
+      opacity: 1;
+    }
+    .nav-bar ul li a{
+      margin: 10px;
+    }
+  }
+/*navigasjonsbaren
+=================================*/
+
+
+/*Hoved tekst med bakgrunnsbilde
+=================================*/
+  .intro h1{ 
+    text-align: center;
+    color: #FFF;
+    font-size: 4rem;
+    position: relative;
+    top: -9.375rem;
+    font-weight: lighter;
+    letter-spacing: 0.125rem;
+  }
+  .intro h3{ 
+    text-align: center;
+    color: #FFF;
+    font-size: 1rem;
+    font-style:italic;
+    position: relative;
+    top: -9.375rem;
+    letter-spacing: 0.125rem;
+  }
+
+  .intro img{
+    width: 100%;
+    max-height: 40rem;
+    min-height: 20rem;
+  }
+  #smart {
+    text-transform:uppercase
+  }
+  @media only screen and (max-width: 800px){
+    .intro h1{
+      font-size: 3rem;
+    }
+    .intro h3{
+      font-size: 0.6rem;
+    }
+  }
+/*Hoved tekst med bakgrunnsbilde
+======================================*/
+
+
+/*Intorduksjonsdelen
+======================================*/
+  #beskrivelse{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5em;
+    width: 35%;
+    line-height: 1.8rem;
+    margin: auto;
+  }
+  .knapp{
+    font-weight: bold;
+    color: #FFF;
+    background-color: black;
+    cursor: pointer;
+    height: 3.125rem;
+    width: 11rem;
+    font-size: 1rem;
+    margin-top: 1.25rem;
+  }
+  .knapp:hover{
+    background-color: #FFF;
+    color: black;
+    transition: font-size .15s;
+    font-size: 1.125rem;
+  }
+  @media only screen and (max-width:900px){
+    #beskrivelse{
+      width: 50%;
+    }
+  }
+  @media only screen and (max-width:600px){
+    #beskrivelse{
+      width: 70%;
+    }
+  }
+/*Intorduksjonsdelen
+====================================*/
+
+
+/*innformasjons delen
+=====================================*/
+  .container{
+    display: flex;
+  }
+  .info {
+    width: 80%; 
+    padding: 6.25rem 5.4rem 6.25rem 5.4rem;
+  }
+  .info h2{
+    font-size: 3.125rem;
+    font-weight: 100;
+  }
+  .info p{
+    margin-top: 1.6rem;
+    color: #1d1d1d;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    font-weight: 400;
+  }
+  .infobilde {
+    width: 9.375rem;
+    height: 6.25rem;
+  }
+  .smartbilde{
+    width: 100%;
+    height: 90%;
+  }
+  @media only screen and (max-width: 950px){
+    .container{
+      display: block;
+    }
+    .info{
+      width: 100%;
+      text-align: center;
+      padding: 4rem;
+    }
+    .smartbilde{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @media only screen and (max-width:600px){
+    .info{
+      padding: 2rem;
+    }
+  }
+/*innformasjons delen
+=====================================*/
+
+
+/*footer koden
+=====================================*/
+.footer-content{
+  display: flex;
+  padding-top: 1.875rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  background-color: black;
+  width: 100%;
+}
+.footer-content h4{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  margin: 0.625rem auto;
+  line-height: 1.75rem;
+}
+.sosiale{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.sosiale li{
+  margin: 0 0.625rem;
+}
+.sosiale a{
+  color: white;
+}
+.sosiale a:hover{
+  color: grey;
+}
+.footer-bottom{
+  background: black;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+}
+.footer-bottom p{
+  font-size: 0.875rem;
+  word-spacing: 0.125rem;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+/*footer koden
+====================================*/
