@@ -30,7 +30,6 @@
     z-index: 10;
   }
   .logo{
-    width: 9rem;
     height: 3rem;
   }
   .activ{
@@ -232,7 +231,6 @@
     font-weight: 400;
   }
   .infobilde {
-    width: 9.375rem;
     height: 6.25rem;
   }
   .smartbilde{
